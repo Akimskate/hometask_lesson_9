@@ -28,24 +28,25 @@ class Job {
     Job({
         required this.id,
         required this.companyId,
-        required this.title,
+        this.title,
         required this.description,
         required this.city,
     });
 
     int id;
     int companyId;
-    String title;
+    String? title;
     String description;
-    String city;
+    String? city;
 
     factory Job.fromJson(Map<String, dynamic> json) => Job(
         id: json["id"],
         companyId: json["companyId"],
-        title: json["title"],
+        title: json["title"] == null ? null : json["title"],
         description: json["description"],
-        city: json["city"],
+        city: json["city"] == null ? null : json["city"],
     );
+    
 
     Map<String, dynamic> toJson() => {
         "id": id,

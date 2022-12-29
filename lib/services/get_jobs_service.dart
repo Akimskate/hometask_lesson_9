@@ -7,6 +7,9 @@ class GetJobsService {
     var url = Uri.parse(ApiConstants.baseUrl + ApiConstants.jobsEndpoint);
     var response = await http.get(url);
 
+    print(response.statusCode);
+    print(response.body);
+
     if (response.statusCode == 200) {
       List<Job> result = jobsFromJson(response.body).result;
       return result;

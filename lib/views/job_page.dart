@@ -12,6 +12,8 @@ class JobPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    
     return Scaffold(
       appBar: AppBar(
         title: Text('Vacancy details'),
@@ -36,8 +38,12 @@ class JobPage extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      jobs.title,
+                    child: jobs.title == null ? 
+                    Text(
+                      '',
+                      style: const TextStyle(fontSize: 18),
+                    ) : Text(
+                      jobs.title!,
                       style: const TextStyle(fontSize: 18),
                     ),
                   ),
@@ -57,8 +63,12 @@ class JobPage extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      jobs.city,
+                    child: jobs.city == null ? 
+                    Text(
+                      '',
+                      style: const TextStyle(fontSize: 18),
+                    ) : Text(
+                      jobs.city!,
                       style: const TextStyle(fontSize: 18),
                     ),
                   ),
