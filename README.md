@@ -1,7 +1,7 @@
 # hometask_lesson_9
 
-Simple flutter app for publishind comapnies and vacancies.
-In this app implementet http library for making request to API on dedicated server.
+Simple flutter app for publishing comapnies and vacancies.
+In this app implemented http library for making request to API on dedicated server.
 
 Architecture - MVC.
 
