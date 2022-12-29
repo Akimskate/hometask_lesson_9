@@ -1,5 +1,10 @@
 # hometask_lesson_9
 
+Simple flutter app for publishind comapnies and vacancies.
+In this app implementet http library for making request to API on dedicated server.
+
+Architecture - MVC.
+
 
 <p float="left">
 <img align="left" width="150" height="300" src="git_images/jobs.png">
